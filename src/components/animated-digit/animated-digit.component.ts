@@ -2,14 +2,10 @@ import {
   Component,
   ElementRef,
   Input,
-  AfterViewInit,
-  ViewChild,
-  OnChanges,
-  SimpleChanges,
   ViewChildren,
   OnInit
 } from "@angular/core";
-import { WaterStorage } from "src/services/water-storage.service";
+import { WaterStorage } from "../../services/water-storage.service";
 
 @Component({
   selector: "animated-digit",

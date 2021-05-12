@@ -3,10 +3,10 @@ import {
   OnInit,
 } from "@angular/core";
 import { FormControl, Validators } from "@angular/forms";
-import { PumpService } from "src/services/pump.service";
-import { SolarPanelService } from "src/services/solar-panel.service";
-import { SunService } from "src/services/sun.service";
-import { WaterStorage } from "src/services/water-storage.service";
+import { PumpService } from "../../services/pump.service";
+import { SolarPanelService } from "../../services/solar-panel.service";
+import { SunService } from "../../services/sun.service";
+import { WaterStorage } from "../../services/water-storage.service";
 
 @Component({
   selector: "input-form",

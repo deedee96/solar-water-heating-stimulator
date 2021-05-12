@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { SunService } from 'src/services/sun.service';
+import { SunService } from '../services/sun.service';
 
 @Component({
   selector: 'app-root',

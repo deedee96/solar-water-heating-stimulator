@@ -8,9 +8,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { AnimatedDigitComponent } from "../components/animated-digit/animated-digit.component";
 import { MatGridListModule } from '@angular/material/grid-list';
-import { DigitTimeComponent } from 'src/components/digit-time/digit-time.component';
+import { DigitTimeComponent } from '../components/digit-time/digit-time.component';
 import { MatIconModule } from '@angular/material/icon';
-import { InputForm } from 'src/components/input-form/input-form.component';
+import { InputForm } from '../components/input-form/input-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
