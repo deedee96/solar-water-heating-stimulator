@@ -29,18 +29,4 @@ export class AnimatedDigitComponent implements OnInit{
       }
     });
   }
-
-  // ngAfterViewInit() {
-  //   if (this.endNumber) {
-  //     if (this.animatedDigit) {
-  //       this.animateCount();
-  //     }
-  //   }
-  // }
-
-  // ngOnChanges(changes: SimpleChanges) {
-  //   if (changes["endNumber"]) {
-  //     this.animateCount();
-  //   }
-  // }
 }

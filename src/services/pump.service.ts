@@ -7,7 +7,7 @@ export class PumpService {
     constructor(waterStorage: WaterStorage) {
         waterStorage.tempChange.subscribe((_t) => {
             if (_t && _t >= this.maxTemp) {
-                waterStorage.setTemp(waterStorage.getTemp() - 7);
+                waterStorage.decreaseTemp(50);
             }
         })
     }

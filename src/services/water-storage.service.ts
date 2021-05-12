@@ -11,6 +11,10 @@ export class WaterStorage {
         this.tempChange = new BehaviorSubject(null);
     }
 
+    public decreaseTemp(t) {
+        this.currentWaterTemp -= t;
+    }
+
     setVolumn(v : number) {
         this.waterVolumn = v;
     }
