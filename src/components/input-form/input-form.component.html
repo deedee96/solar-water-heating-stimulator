@@ -1,0 +1,37 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width" floatLabel="always">
+      <mat-label>Total Volume of Water (Gallons)</mat-label>
+      <input matInput type="number" matInput placeholder="100" required="true" [formControl]="waterVolumn">
+      <mat-error *ngIf="waterVolumn.invalid">{{getErrorMessage(waterVolumn)}}</mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" floatLabel="always">
+      <mat-label>Initial Temperature of Water (°F)</mat-label>
+      <input type="number" matInput placeholder="52" required="true" [formControl]="initTemp">
+      <mat-error *ngIf="waterVolumn.invalid">{{getErrorMessage(initTemp)}}</mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" floatLabel="always">
+      <mat-label>Maximum Water Temperature (°F)</mat-label>
+      <input type="number" matInput placeholder="52" required="true" [formControl]="maxTemp">
+      <mat-error *ngIf="waterVolumn.invalid">{{getErrorMessage(maxTemp)}}</mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" floatLabel="always">
+      <mat-label>Solar Power (Watts)</mat-label>
+      <input matInput [value]="solarPower" readonly="true" required="true">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" floatLabel="always">
+      <mat-label>Number of Solar Panel(s)</mat-label>
+      <input matInput placeholder="2" type="number" required="true" [formControl]="solarPanel">
+      <mat-error *ngIf="waterVolumn.invalid">{{getErrorMessage(solarPanel)}}</mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" floatLabel="always">
+      <mat-label>Solar Panel Effeciency (%)</mat-label>
+      <input matInput placeholder="96" type="number" required="true" [formControl]="solarEffeciency">
+      <mat-error *ngIf="waterVolumn.invalid">{{getErrorMessage(solarEffeciency)}}</mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" floatLabel="always">
+      <mat-label>Heater Effeciency (%)</mat-label>
+      <input matInput placeholder="35" type="number" required="true" [formControl]="heaterEffeciency">
+      <mat-error *ngIf="waterVolumn.invalid">{{getErrorMessage(heaterEffeciency)}}</mat-error>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button color="primary" (click)="startStimulate()" [disabled]="this.disableButton">Start Stimilulating</button>
